@@ -1,9 +1,11 @@
 const router = require("express").Router();
+const User = require("../../models/User");
 
 // for test
 router.get('/', (req, res) => {
 	res.send('<h1>localhost:5000/navigate/login</h1');
 });
+
 
 router.post("/", (req, res) => {
 	User.findOne({

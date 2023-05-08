@@ -31,7 +31,10 @@ body {
 	--hover: #ffff00;
 	--error: #ff0000;
 }
-
+/* font awesome overrides */
+.fab {
+	line-height: 1.6 !important;
+}
 /* link class - no text decoration after active or visited */
 .navLink:visited,
 .navLink:active {
