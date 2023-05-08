@@ -1,10 +1,14 @@
 [
     {
+        "firstName": "userFirstName",
+        "lastName": "userLastName",
         "email": "test_user@gmail.com",
         "password": "test_user",
         "isUser": true
     },
     {
+        "firstName": "adminFirstName",
+        "lastName": "adminLastName",
         "email": "test_admin@gmail.com",
         "password": "test_admin",
         "isUser": true,
