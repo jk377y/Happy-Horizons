@@ -1,0 +1,42 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Happy Horizons</title>
+		<script type="module" src="./assets/js/customElements.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+
+		<custom-header></custom-header>
+
+		{{#if loggedIn}}
+            <section class="loginWrap">Hello {{username}}</section>
+        {{else}}
+			<section class="loginWrap">
+				<form action="get" class="login">
+					<h2>Resident Login</h2>
+					<input class="loginInputField" type="text" id="email" name="email" placeholder="Enter Email" />
+					<input class="loginInputField" type="password" id="password" name="password" placeholder="Enter Password" />
+					<div class="loginSubmitBtnDiv">
+						<input class="loginSubmitBtn submitBtn" type="submit" value="Submit" />
+					</div>
+				</form>
+			</section>
+		{{/if}}
+
+		<main>
+			{{{body}}}
+		</main>
+
+		<custom-footer></custom-footer>
+		<script src="./assets/js/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="./assets/js/indexSlideshow.js"></script>
+
+	</body>
+
+</html>
