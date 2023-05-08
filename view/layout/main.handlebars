@@ -4,14 +4,40 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Happy Horizons</title>
-		<script type="module" src="../../assets/js/customElements.js"></script>
+		<script src="../../assets/js/script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+		<script src="../../assets/js/indexSlideshow.js" defer></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="../../assets/css/style.css" />
 	</head>
 	<body>
 
-		<custom-header></custom-header>
+        <header>
+			<div class="header-container">
+				<div class="titleDiv">
+					<img class="logo" src="../images/logo.webp" alt="logo"/>
+					<h1 class="title">Happy Horizons</h1>
+				</div>
+				<nav class="navBar">
+					<a class="navLink" href="/index.html">Home</a>
+					<a class="navLink" href="/navigate/myPortal.html">MyPortal</a>
+					<a class="navLink" href="/navigate/ticket.html">Open Ticket</a>
+					<a class="navLink" href="/navigate/contactUs.html">Contact Us</a>
+					<a class="navLink" href="/navigate/admin.html">Admin</a>
+				</nav>
+				<button class="hamburger">
+				<div class="bar"></div>
+				</button>
+				<nav class="mobileNav border">
+					<a class="mobileNavLink" href="/index.html">Home</a>
+					<a class="mobileNavLink" href="/navigate/myPortal.html">MyPortal</a>
+					<a class="mobileNavLink" href="/navigate/ticket.html">Open Ticket</a>
+					<a class="mobileNavLink" href="/navigate/contactUs.html">Contact Us</a>
+					<a class="mobileNavLink" href="/navigate/admin.html">Admin</a>
+				</nav>
+			</div>
+		</header>
 
 		{{#if loggedIn}}
             <section class="loginWrap">Hello {{username}}</section>
@@ -32,11 +58,23 @@
 			{{{body}}}
 		</main>
 
-		<custom-footer></custom-footer>
-		<script src="../../assets/js/script.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-		<script src="../../assets/js/indexSlideshow.js"></script>
-
-	</body>
+		<div class="footer-container">
+			<nav class="footerNav">
+				<a href="https://www.facebook.com/" class="icon facebook">
+					<div class="tooltip fb">Facebook</div>
+					<span><i class="fab fa-facebook-f"></i></span>
+				</a>
+				<a href="https://www.instagram.com/" class="icon insta">
+					<div class="tooltip ig">Instagram</div>
+					<span><i class="fab fa-instagram"></i></span>
+				</a>
+				<a href="https://twitter.com/" class="icon twitter">
+					<div class="tooltip tw">Twitter</div>
+					<span><i class="fab fa-twitter"></i></span>
+				</a>
+			</nav>
+		</div>
+	
+    </body>
 
 </html>
