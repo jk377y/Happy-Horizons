@@ -13,5 +13,13 @@
         "password": "test_admin",
         "isUser": true,
         "isAdmin": true
+    },
+    {
+        "firstName": "James",
+        "lastName": "Kelly",
+        "email": "james@gmail.com",
+        "password": "james",
+        "isUser": true,
+        "isAdmin": true
     }
 ]

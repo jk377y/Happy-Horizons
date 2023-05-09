@@ -18,35 +18,46 @@
 					<h1 class="title">Happy Horizons</h1>
 				</div>
 				<nav class="navBar">
-					<a class="navLink" href="/index.html">Home</a>
-					<a class="navLink" href="/navigate/myPortal.html">MyPortal</a>
-					<a class="navLink" href="/navigate/ticket.html">Open Ticket</a>
-					<a class="navLink" href="/navigate/contactUs.html">Contact Us</a>
-					<a class="navLink" href="/navigate/admin.html">Admin</a>
+					<a class="navLink" href="/">Home</a>
+					<a class="navLink" href="/navigate/contactUs">Contact Us</a>
+					{{#if loggedIn}}
+					<a class="navLink" href="/navigate/myPortal">MyPortal</a>
+					<a class="navLink" href="/navigate/ticket">Open Ticket</a>
+					<a class="navLink" href="/navigate/admin">Admin</a>
+					{{/if}}
 				</nav>
 				<button class="hamburger">
 					<div class="bar"></div>
 				</button>
 				<nav class="mobileNav border">
-					<a class="mobileNavLink" href="/index.html">Home</a>
-					<a class="mobileNavLink" href="/navigate/myPortal.html">MyPortal</a>
-					<a class="mobileNavLink" href="/navigate/ticket.html">Open Ticket</a>
-					<a class="mobileNavLink" href="/navigate/contactUs.html">Contact Us</a>
-					<a class="mobileNavLink" href="/navigate/admin.html">Admin</a>
+					<a class="mobileNavLink" href="/">Home</a>
+					<a class="mobileNavLink" href="/navigate/contactUs">Contact Us</a>
+					{{#if loggedIn}}
+					<a class="mobileNavLink" href="/navigate/myPortal">MyPortal</a>
+					<a class="mobileNavLink" href="/navigate/ticket">Open Ticket</a>
+					<a class="mobileNavLink" href="/navigate/admin">Admin</a>
+					{{/if}}
 				</nav>
 			</div>
 		</header>
 
 		{{#if loggedIn}}
-			<section class="loginWrap">Welcome, {{user.firstName}}!</section>
+			<section class="logoutWrap">
+				<form action="/logout" method="POST" class="login">
+					<h2>Hello, {{firstName}}</h2>
+					<div class="logoutSubmitBtnDiv">
+						<input class="logoutSubmitBtn submitBtn" type="submit" value="Logout" />
+					</div>
+				</form>
+			</section>
 		{{else}}
 			<section class="loginWrap">
-				<form action="get" class="login">
+				<form action="/login" method="POST" class="login">
 					<h2>Resident Login</h2>
-					<input class="loginInputField" type="text" id="email" name="email" placeholder="Enter Email" />
+					<input class="loginInputField" type="email" id="email" name="email" placeholder="Enter Email" />
 					<input class="loginInputField" type="password" id="password" name="password" placeholder="Enter Password" />
 					<div class="loginSubmitBtnDiv">
-						<input class="loginSubmitBtn submitBtn" type="submit" value="Submit" />
+						<input class="loginSubmitBtn submitBtn" type="submit" value="Login" />
 					</div>
 				</form>
 			</section>
