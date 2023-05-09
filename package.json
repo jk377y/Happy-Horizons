@@ -12,6 +12,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "bcrypt": "^5.1.0",
     "connect-mongo": "^3.1.2",
     "dotenv": "^16.0.3",

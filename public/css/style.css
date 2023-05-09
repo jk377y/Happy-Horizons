@@ -25,7 +25,8 @@ body {
 	--h4: 1.25rem;
 	--h5: 1.1rem;
 	--p: 1rem;
-	--borderColor: #050505fd;
+	--borderColor: #05050588;
+	--border: 3px solid var(--bgColor);
 	--bgColor: rgba(0, 0, 0, 0.562);
 	--windowColor: #00000085;
 	--hover: #ffff00;
@@ -63,6 +64,7 @@ body {
 	background-attachment: fixed;
 	z-index: -1;
 	position: relative;
+	min-height: 100vh;
 }
 body::after {
 	content: "";
@@ -75,11 +77,10 @@ body::after {
 	z-index: -1;
 	opacity: 0.9;
 }
-/* main {
+main {
 	width: 100vw;
-	min-height: 100vh;
-	background-color: var(--windowColor);
-} */
+	min-height: calc(100vh - 355px);
+}
 a {
 	color: var(--color1);
 }
@@ -88,6 +89,8 @@ a:hover {
 }
 /* Header */
 .header-container {
+	/* position: fixed;
+	top: 0; */
 	width: 100%;
 	height: 100px;
 	display: flex;
@@ -228,9 +231,7 @@ nav a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
 	width: 250px;
-
 }
 .footerNav .icon {
 	position: relative;
@@ -246,21 +247,24 @@ nav a {
 	align-items: center;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	color: #333;
 	text-decoration: none;
 }
 .footerNav .facebook {
 	color: #3b5999;
 	background-color: #ffffff;
+	text-shadow: none !important;
 }
 .footerNav .insta {
 	color: #e4405f;
 	background-color: #ffffff;
+	text-shadow: none !important;
 }
 .footerNav .twitter {
 	color: #1da1f2;
 	background-color: #ffffff;
+	text-shadow: none !important;
 }
 .footerNav .tooltip {
 	position: absolute;
@@ -271,10 +275,10 @@ nav a {
 	color: #ffffff;
 	/* padding: 5px 2px; */
 	border-radius: 5px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 	opacity: 0;
 	pointer-events: none;
-	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .fb {
 	padding: 5px 0px;
@@ -295,7 +299,7 @@ nav a {
 	bottom: -3px;
 	left: 50%;
 	transform: translate(-50%) rotate(45deg);
-	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .footerNav .icon:hover .tooltip {
 	top: -45px;
@@ -305,42 +309,51 @@ nav a {
 }
 .footerNav .icon:hover span,
 .footerNav .icon:hover .tooltip {
-	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+	text-shadow: 1px 1px 2px var(--color2);
 }
 .footerNav .facebook:hover,
 .footerNav .facebook:hover .tooltip,
 .footerNav .facebook:hover .tooltip::before {
 	background-color: #3b5999;
 	color: #ffffff;
+	text-shadow: 1px 1px 2px var(--color2);
+	scale: 1.2;
 }
 .footerNav .twitter:hover,
 .footerNav .twitter:hover .tooltip,
 .footerNav .twitter:hover .tooltip::before {
 	background-color: #46c1f6;
 	color: #ffffff;
+	text-shadow: 1px 1px 2px var(--color2);
+	scale: 1.2;
 }
 .footerNav .insta:hover,
 .footerNav .insta:hover .tooltip,
 .footerNav .insta:hover .tooltip::before {
 	background-color: #e1306c;
 	color: #ffffff;
+	text-shadow: 1px 1px 2px var(--color2);
+	scale: 1.2;
 }
-/* Index page */
-.loginWrap {
+/* Homepage page */
+.loginWrap, .logoutWrap {
+	/* position: relative;
+	top: 100px;
+	right: 0; */
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	height: 150px;
+	height: 175px;
 	padding: 0 1rem 0 0;
 }
-.logoutWrap {
+/* .logoutWrap {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-end;
 	height: 100px;
 	padding: 0 1rem 0 0;
-}
+} */
 .login {
 	display: flex;
 	flex-direction: column;
@@ -478,4 +491,54 @@ nav a {
 }
 .swiper .swiper-pagination-bullet-active {
 	background-color: var(--color1);
+}
+/* Contact Us Page */
+.contactForm {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.contactForm div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	background-color: var(--color5);
+	padding: 2rem;
+	border-radius: 5px;
+	width: 500px;
+	max-width: 90%;
+}
+.contactForm h2 {
+	font-size: var(--h2);
+	color: var(--color1);
+	text-shadow: 2px 2px 2px var(--color4);
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px var(--color2);
+}
+.contactField {
+	background-color: var(--color1);
+	font-size: var(--p);
+	color: var(--color2);
+	border-radius: 5px;
+	padding: 0.25rem;
+	width: 100%;
+}
+.contactTextArea {
+	height: 200px;
+	resize: none;
+}
+.contactSubmitBtn {
+	background-color: var(--color3);
+	font-size: var(--h5);
+	color: var(--color2);
+	border-radius: 5px;
+	padding: 0.25rem 0.25rem;
+	width: 100px;
+}
+.contactSubmitBtn:hover {
+	background-color: var(--color2);
+	color: var(--color3);
+	cursor: pointer;
 }

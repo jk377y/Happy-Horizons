@@ -1,13 +1,12 @@
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
+const { checkLoggedIn } = require('../middleware/checkLoggedIn');
 
 //! WORKING
 // loads homepage
-router.get("/", function (req, res) {
-	const firstName = req.session.loggedIn ? req.session.user.firstName : null;
-	const isAdmin = req.session.loggedIn ? req.session.user.isAdmin : null;
-	res.render("homepage", { loggedIn: req.session.loggedIn, firstName: firstName, isAdmin: isAdmin });
+router.get("/", checkLoggedIn, function (req, res) {
+	res.render("homepage");
 });
 
 //! WORKING
