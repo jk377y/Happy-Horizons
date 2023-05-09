@@ -21,9 +21,11 @@
 					<a class="navLink" href="/">Home</a>
 					<a class="navLink" href="/navigate/contactUs">Contact Us</a>
 					{{#if loggedIn}}
-					<a class="navLink" href="/navigate/myPortal">MyPortal</a>
-					<a class="navLink" href="/navigate/ticket">Open Ticket</a>
-					<a class="navLink" href="/navigate/admin">Admin</a>
+						<a class="navLink" href="/navigate/myPortal">MyPortal</a>
+						<a class="navLink" href="/navigate/ticket">Open Ticket</a>
+						{{#if isAdmin}}
+							<a class="navLink" href="/navigate/admin">Admin</a>
+						{{/if}}
 					{{/if}}
 				</nav>
 				<button class="hamburger">
@@ -33,9 +35,9 @@
 					<a class="mobileNavLink" href="/">Home</a>
 					<a class="mobileNavLink" href="/navigate/contactUs">Contact Us</a>
 					{{#if loggedIn}}
-					<a class="mobileNavLink" href="/navigate/myPortal">MyPortal</a>
-					<a class="mobileNavLink" href="/navigate/ticket">Open Ticket</a>
-					<a class="mobileNavLink" href="/navigate/admin">Admin</a>
+						<a class="mobileNavLink" href="/navigate/myPortal">MyPortal</a>
+						<a class="mobileNavLink" href="/navigate/ticket">Open Ticket</a>
+						<a class="mobileNavLink" href="/navigate/admin">Admin</a>
 					{{/if}}
 				</nav>
 			</div>
@@ -52,7 +54,7 @@
 			</section>
 		{{else}}
 			<section class="loginWrap">
-				<form action="/login" method="POST" class="login">
+				<form action="/" method="POST" class="login">
 					<h2>Resident Login</h2>
 					<input class="loginInputField" type="email" id="email" name="email" placeholder="Enter Email" />
 					<input class="loginInputField" type="password" id="password" name="password" placeholder="Enter Password" />

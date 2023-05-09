@@ -10,7 +10,7 @@ router.get("/", function (req, res) {
 
 //! WORKING
 // when submitting login
-router.post("/login", async (req, res) => {
+router.post("/", async (req, res) => {
 	const { email, password } = req.body;
 	const user = await User.findOne({ email: email });
 	if (!user) {
@@ -20,7 +20,7 @@ router.post("/login", async (req, res) => {
 	  const match = await bcrypt.compare(password, user.password);
 	  if (match) {
 		req.session.loggedIn = true;
-		res.render("homepage", { loggedIn: true, firstName: user.firstName });
+		res.render("homepage", { loggedIn: true, firstName: user.firstName, isAdmin: user.isAdmin });
 	  } else {
 		// Display an alert message if the password is incorrect
 		res.send('<script>alert("Invalid login credentials. Please try again."); window.location.href="/";</script>');

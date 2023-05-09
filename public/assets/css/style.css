@@ -33,7 +33,7 @@ body {
 }
 /* font awesome overrides */
 .fab {
-	line-height: 1.6 !important;
+	line-height: 1.8 !important;
 }
 /* link class - no text decoration after active or visited */
 .navLink:visited,
@@ -457,9 +457,6 @@ nav a {
 	max-width: 900px;
 	height: fit-content;
 	/* border: 15px inset var(--windowColor); */
-}
-.swiper-slide{
-	
 }
 .swiper-slide img{
 	width: 100%;
