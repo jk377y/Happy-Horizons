@@ -19,6 +19,7 @@ router.post("/", async (req, res) => {
 	} else {
 	  const match = await bcrypt.compare(password, user.password);
 	  if (match) {
+		req.session.user = user;
 		req.session.loggedIn = true;
 		res.render("homepage", { loggedIn: true, firstName: user.firstName, isAdmin: user.isAdmin });
 	  } else {
