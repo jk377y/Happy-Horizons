@@ -11,7 +11,7 @@ const adminAuth = (req, res, next) => {
 };
 
 router.get("/", checkLoggedIn, adminAuth, function (req, res) {
-	res.render("admin", { layout: "adminPanel.handlebars" });
+	res.render("admin", { layout: "adminPanel.handlebars", stylesheet: 'admin.css' });
 });
 
 module.exports = router;
