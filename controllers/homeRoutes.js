@@ -6,7 +6,10 @@ const { checkLoggedIn } = require('../middleware/checkLoggedIn');
 //! WORKING
 // loads homepage
 router.get("/", checkLoggedIn, function (req, res) {
-	res.render("homepage");
+	res.render("homepage", {
+		stylesheet: 'homepage.css', 
+		swiperCSS: 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'
+	});
 });
 
 //! WORKING
@@ -22,7 +25,13 @@ router.post("/", async (req, res) => {
 	  if (match) {
 		req.session.user = user;
 		req.session.loggedIn = true;
-		res.render("homepage", { loggedIn: true, firstName: user.firstName, isAdmin: user.isAdmin });
+		res.render("homepage", { 
+			stylesheet: 'homepage.css',
+			swiperCSS: 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css',
+			loggedIn: true, 
+			firstName: user.firstName, 
+			isAdmin: user.isAdmin 
+		});
 	  } else {
 		// Display an alert message if the password is incorrect
 		res.send('<script>alert("Invalid login credentials. Please try again."); window.location.href="/";</script>');
@@ -49,7 +58,10 @@ router.get("/notLoggedIn", (req, res) => {
 
 // when user is logged in but not authorized to access a page
 router.get("/unauthorized", (req, res) => {
-	res.render("unauthorized", { layout: "deadend.handlebars" });
+	res.render("unauthorized", { 
+		layout: "deadend.handlebars",
+	 	firstName: req.session.user.firstName,
+	});
 });
 
 

@@ -28,7 +28,7 @@ app.use(
 		},
 	})
 );
-const setHelper = require('./public/js/hbSetHelper');
+
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
