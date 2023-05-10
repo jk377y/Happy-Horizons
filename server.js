@@ -47,7 +47,7 @@ mongoose
 		console.log("Connected to MongoDB successfully!");
 		app.listen(PORT, () => {
 			console.log(`Server started on port ${PORT}`);
-		})
+		});
 	})
 	.catch((err) => {
 		console.log(err);

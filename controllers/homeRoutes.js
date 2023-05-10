@@ -42,4 +42,15 @@ router.post("/logout", (req, res) => {
 	}
 });
 
+// when user is not logged in and tries to access a page
+router.get("/notLoggedIn", (req, res) => {
+	res.render("notLoggedIn", { layout: "deadend.handlebars" });
+});
+
+// when user is logged in but not authorized to access a page
+router.get("/unauthorized", (req, res) => {
+	res.render("unauthorized", { layout: "deadend.handlebars" });
+});
+
+
 module.exports = router;

@@ -1,0 +1,72 @@
+/* ===== RESETS AND DEFAULTS ===== */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1.5;
+	background-color: var(--color6);
+}
+
+/* var() values for group coloring */
+:root {
+	--color1: white;
+	--color2: black;
+	--color3: #7bafd4;
+	/* --color3: #00312f; */
+	/* --color3: #00ad82; */
+	--color4: #333333c9;
+	--color5: #00000033;
+    --color6: #31475f;
+	--h1: 2.5rem;
+	--h2: 2rem;
+	--h3: 1.5rem;
+	--h4: 1.25rem;
+	--h5: 1.1rem;
+	--p: 1rem;
+	--borderColor: #05050588;
+	--border: 3px solid var(--bgColor);
+	--bgColor: rgba(0, 0, 0, 0.562);
+	--windowColor: #00000085;
+	--hover: #ffff00;
+	--error: #ff0000;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error {
+    font-size: var(--h1);
+    color: var(--error);
+}
+.warning {
+    font-size: var(--h3);
+    color: var(--hover);
+}
+.navButton {
+    background-color: var(--color3);
+	font-size: var(--h5);
+	color: var(--color2);
+	border-radius: 5px;
+	padding: 0.25rem 0.25rem;
+	margin-top: 30px;
+}
+.navButton:hover {
+    background-color: var(--color2);
+    color: var(--color3);
+    cursor: pointer;
+}

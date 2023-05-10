@@ -45,7 +45,7 @@
 
 		{{#if loggedIn}}
 			<section class="logoutWrap">
-				<form action="/logout" method="POST" class="login">
+				<form action="/logout" method="POST" class="login border">
 					<h2>Hello, {{firstName}}</h2>
 					<div class="logoutSubmitBtnDiv">
 						<input class="logoutSubmitBtn submitBtn" type="submit" value="Logout" />
@@ -54,7 +54,7 @@
 			</section>
 		{{else}}
 			<section class="loginWrap">
-				<form action="/" method="POST" class="login">
+				<form action="/" method="POST" class="login border">
 					<h2>Resident Login</h2>
 					<input class="loginInputField" type="email" id="email" name="email" placeholder="Enter Email" />
 					<input class="loginInputField" type="password" id="password" name="password" placeholder="Enter Password" />

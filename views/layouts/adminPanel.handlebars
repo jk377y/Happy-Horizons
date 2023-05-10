@@ -1,0 +1,48 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Happy Horizons</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+		<link rel="stylesheet" href="/css/admin.css" />
+	</head>
+	
+    <body>
+
+		<header>
+			<div class="header-container">
+				<div class="titleDiv">
+					<h2 class="title">Happy Horizons Admin Panel</h2>
+				</div>
+				<nav class="navBar">
+					<a class="navLink adminText" href="/">Home</a>
+					<a class="navLink adminText" href="/navigate/contactUs">Contact Us</a>
+					{{#if loggedIn}}
+						<a class="navLink adminText" href="/navigate/myPortal">MyPortal</a>
+						<a class="navLink adminText" href="/navigate/ticket">Open Ticket</a>
+						{{#if isAdmin}}
+							<a class="navLink adminText" href="/navigate/admin">Admin</a>
+						{{/if}}
+					{{/if}}
+				</nav>
+			</div>
+		</header>
+
+		{{#if loggedIn}}
+			<section class="adminUserWrap">
+				<form action="/logout" method="POST" class="userWindow">
+					<h3 class="adminText">Logged in as <span class="user">{{firstName}}</span></h3>
+					<div class="logoutSubmitBtnDiv">
+						<input class="logoutSubmitBtn submitBtn" type="submit" value="Logout" />
+					</div>
+				</form>
+			</section>
+		{{/if}}
+
+		<main>
+			{{{body}}}
+		</main>
+
+	</body>
+</html>
