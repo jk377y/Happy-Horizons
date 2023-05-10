@@ -10,14 +10,11 @@ body {
 	line-height: 1.5;
 	background-color: var(--color6);
 }
-
 /* var() values for group coloring */
 :root {
 	--color1: white;
 	--color2: black;
 	--color3: #7bafd4;
-	/* --color3: #00312f; */
-	/* --color3: #00ad82; */
 	--color4: #333333c9;
 	--color5: #00000033;
     --color6: #31475f;
@@ -65,7 +62,6 @@ main {
 	color: var(--color2);
 	border-radius: 5px;
 	padding: 0.25rem 0.25rem;
-	/* width: 40%; */
 }
 .navButton:hover {
     background-color: var(--color2);
@@ -95,7 +91,6 @@ main {
 	color: var(--color2);
 	border-radius: 5px;
 	padding: 0.25rem 0.25rem;
-	/* width: 40%; */
 }
 .logoutSubmitBtn:hover {
 	background-color: var(--color2);

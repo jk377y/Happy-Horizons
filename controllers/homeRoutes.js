@@ -30,7 +30,7 @@ router.post("/", async (req, res) => {
 			swiperCSS: 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css',
 			loggedIn: true, 
 			firstName: user.firstName, 
-			isAdmin: user.isAdmin 
+			isAdmin: user.isAdmin, 
 		});
 	  } else {
 		// Display an alert message if the password is incorrect
@@ -53,7 +53,9 @@ router.post("/logout", (req, res) => {
 
 // when user is not logged in and tries to access a page
 router.get("/notLoggedIn", (req, res) => {
-	res.render("notLoggedIn", { layout: "deadend.handlebars" });
+	res.render("notLoggedIn", { 
+		layout: "deadend.handlebars",
+	});
 });
 
 // when user is logged in but not authorized to access a page
@@ -63,6 +65,5 @@ router.get("/unauthorized", (req, res) => {
 	 	firstName: req.session.user.firstName,
 	});
 });
-
 
 module.exports = router;
