@@ -51,6 +51,7 @@ router.post("/logout", (req, res) => {
 	}
 });
 
+//! WORKING
 // when user is not logged in and tries to access a page
 router.get("/notLoggedIn", (req, res) => {
 	res.render("notLoggedIn", { 
@@ -58,6 +59,7 @@ router.get("/notLoggedIn", (req, res) => {
 	});
 });
 
+//! WORKING
 // when user is logged in but not authorized to access a page
 router.get("/unauthorized", (req, res) => {
 	res.render("unauthorized", { 
