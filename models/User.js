@@ -22,6 +22,11 @@ const userSchema = new Schema({
 		type: String,
 		required: true,
 	},
+	unit: {
+		type: Schema.Types.ObjectId,
+		ref: "Unit",
+		default: null,
+	},
 	isUser: {
 		type: Boolean,
 		default: true,
@@ -31,7 +36,7 @@ const userSchema = new Schema({
 		type: Boolean,
 		default: false,
 		required: false,
-	}
+	},
 });
 
 // hash user password
