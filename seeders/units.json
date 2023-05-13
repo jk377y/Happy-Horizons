@@ -1,0 +1,1442 @@
+[
+    {
+        "apartmentNumber": "A101",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A102",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A103",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A104",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "A105",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A106",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A107",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A108",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "A201",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A202",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A203",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A204",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "A205",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A206",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A207",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A208",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "A301",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A302",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A303",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A304",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "A305",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A306",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A307",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A308",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "A401",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A402",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A403",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A404",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "A405",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "A406",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "A407",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "A408",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      }, 
+    {
+        "apartmentNumber": "B101",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B102",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B103",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B104",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "B105",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B106",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B107",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B108",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "B201",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B202",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B203",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B204",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "B205",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B206",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B207",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B208",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "B301",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B302",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B303",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B304",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "B305",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B306",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B307",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B308",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "B401",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B402",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B403",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B404",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+        "apartmentNumber": "B405",
+        "floorPlan": "The Waterfall",
+        "floorPlanImage": "TheWaterfall.png",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1200
+      },
+      {
+        "apartmentNumber": "B406",
+        "floorPlan": "The Spring",
+        "floorPlanImage": "TheSpring.png",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "tenant": null,
+        "monthlyRent": 1400
+      },
+      {
+        "apartmentNumber": "B407",
+        "floorPlan": "The Galaxy",
+        "floorPlanImage": "TheGalaxy.png",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1600
+      },
+      {
+        "apartmentNumber": "B408",
+        "floorPlan": "The River",
+        "floorPlanImage": "TheRiver.png",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "tenant": null,
+        "monthlyRent": 1800
+      },
+      {
+		"apartmentNumber": "C101",
+		"floorPlan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C102",
+		"floorPlan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C103",
+		"floorPlan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C104",
+		"floorPlan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "C105",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C106",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C107",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C108",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "C201",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C202",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C203",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C204",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "C205",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C206",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C207",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C208",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "C301",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C302",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C303",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C304",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "C305",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C306",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C307",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C308",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "C401",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C402",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C403",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C404",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "C405",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "C406",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "C407",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "C408",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+    {
+		"apartmentNumber": "D101",
+		"floorPlan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D102",
+		"floorPlan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D103",
+		"floorPlan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D104",
+		"floorPlan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "D105",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D106",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D107",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D108",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "D201",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D202",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D203",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D204",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "D205",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D206",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D207",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D208",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "D301",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D302",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D303",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D304",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "D305",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D306",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D307",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D308",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "D401",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D402",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D403",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D404",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "D405",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "D406",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "D407",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "D408",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+    {
+		"apartmentNumber": "E101",
+		"floorPlan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E102",
+		"floorPlan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E103",
+		"floorPlan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E104",
+		"floorPlan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "E105",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E106",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E107",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E108",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "E201",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E202",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E203",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E204",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "E205",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E206",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E207",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E208",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "E301",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E302",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E303",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E304",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "E305",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E306",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E307",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E308",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "E401",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E402",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E403",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E404",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	},
+	{
+		"apartmentNumber": "E405",
+		"floorplan": "The Waterfall",
+		"floorPlanImage": "TheWaterfall.png",
+		"bedrooms": 1,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1200
+	},
+	{
+		"apartmentNumber": "E406",
+		"floorplan": "The Spring",
+		"floorPlanImage": "TheSpring.png",
+		"bedrooms": 2,
+		"bathrooms": 1,
+		"tenant": null,
+		"monthlyRent": 1400
+	},
+	{
+		"apartmentNumber": "E407",
+		"floorplan": "The Galaxy",
+		"floorPlanImage": "TheGalaxy.png",
+		"bedrooms": 2,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1600
+	},
+	{
+		"apartmentNumber": "E408",
+		"floorplan": "The River",
+		"floorPlanImage": "TheRiver.png",
+		"bedrooms": 3,
+		"bathrooms": 2,
+		"tenant": null,
+		"monthlyRent": 1800
+	}
+]

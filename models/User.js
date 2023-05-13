@@ -22,8 +22,7 @@ const userSchema = new Schema({
 		type: String,
 		required: true,
 		unique: true,
-		match: [
-			/^\d{3}-\d{3}-\d{4}$/, "Must match a valid phone number!"],
+		match: [/^\d{3}-\d{3}-\d{4}$/, "Must match a valid phone number!"],
 	},
 	password: {
 		type: String,
@@ -33,6 +32,7 @@ const userSchema = new Schema({
 		type: Schema.Types.ObjectId,
 		ref: "Unit",
 		default: null,
+		required: false,
 	},
 	isUser: {
 		type: Boolean,
