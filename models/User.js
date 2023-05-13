@@ -16,7 +16,7 @@ const userSchema = new Schema({
 		type: String,
 		required: true,
 		unique: true,
-		match: [/.+@.+\..+/, "Must match an email address!"],
+		match: [/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, "Must match an email address!"],
 	},
 	phone: {
 		type: String,

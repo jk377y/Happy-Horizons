@@ -1,25 +1,73 @@
 [
-    {
-        "firstName": "userFirstName",
-        "lastName": "userLastName",
-        "email": "test_user@gmail.com",
-        "password": "test_user",
-        "isUser": true
-    },
-    {
-        "firstName": "adminFirstName",
-        "lastName": "adminLastName",
-        "email": "test_admin@gmail.com",
-        "password": "test_admin",
-        "isUser": true,
-        "isAdmin": true
-    },
-    {
-        "firstName": "James",
-        "lastName": "Kelly",
-        "email": "james@gmail.com",
-        "password": "james",
-        "isUser": true,
-        "isAdmin": true
-    }
+	{
+		"firstName": "John",
+		"lastName": "Doe",
+		"email": "john.doe@email.com",
+		"phone": "111-111-1111",
+		"password": "john.doe"
+	},
+	{
+		"firstName": "Jane",
+		"lastName": "Smith",
+		"email": "jane.smith@email.com",
+		"phone": "222-222-2222",
+		"password": "jane.smith"
+	},
+	{
+		"firstName": "Michael",
+		"lastName": "Johnson",
+		"email": "michael.johnson@email.com",
+		"phone": "333-333-3333",
+		"password": "michael.johnson"
+	},
+	{
+		"firstName": "Emily",
+		"lastName": "Davis",
+		"email": "emily.davis@email.com",
+		"phone": "444-444-4444",
+		"password": "emily.davis"
+	},
+	{
+		"firstName": "Alex",
+		"lastName": "Wilson",
+		"email": "alex.wilson@email.com",
+		"phone": "555-555-5555",
+		"password": "alex.wilson"
+	},
+	{
+		"firstName": "Sarah",
+		"lastName": "Lee",
+		"email": "sarah.lee@email.com",
+		"phone": "666-666-6666",
+		"password": "sarah.lee"
+	},
+	{
+		"firstName": "Matthew",
+		"lastName": "Robinson",
+		"email": "matthew.robinson@email.com",
+		"phone": "777-777-7777",
+		"password": "matthew.robinson"
+	},
+	{
+		"firstName": "Sophia",
+		"lastName": "Taylor",
+		"email": "sophia.taylor@email.com",
+		"phone": "888-888-8888",
+		"password": "sophia.taylor"
+	},
+	{
+		"firstName": "Daniel",
+		"lastName": "Anderson",
+		"email": "daniel.anderson@email.com",
+		"phone": "999-999-9999",
+		"password": "daniel.anderson"
+	},
+	{
+		"firstName": "AdminFN",
+		"lastName": "AdminLN",
+		"email": "admin@email.com",
+		"phone": "000-000-0000",
+		"password": "admin",
+		"isAdmin": true
+	}
 ]
