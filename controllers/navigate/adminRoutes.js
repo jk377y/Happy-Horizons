@@ -15,21 +15,36 @@ router.get("/", checkLoggedIn, adminAuth, function (req, res) {
 });
 
 //! Working
+// GET route to retreive ALL users
+router.get("/users", checkLoggedIn, adminAuth, async (req, res) => {
+	try {
+		const users = await User.find();
+		if (!users || users.length === 0) {
+			return res.status(404).json({ message: "No users found" });
+		}
+		res.json(users);
+	} catch (error) {
+		console.error(error);
+		res.status(500).json({ message: "Internal server error" });
+	}
+});
+
+
+
+//! Working
 // GET route to retrieve ALL units
 router.get("/units", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
-	  const units = await Unit.find();
-  
-	  if (!units || units.length === 0) {
-		return res.status(404).json({ message: "No units found" });
-	  }
-  
-	  res.json(units);
+		const units = await Unit.find();
+		if (!units || units.length === 0) {
+			return res.status(404).json({ message: "No units found" });
+		}
+		res.json(units);
 	} catch (error) {
-	  console.error(error);
-	  res.status(500).json({ message: "Internal server error" });
+		console.error(error);
+		res.status(500).json({ message: "Internal server error" });
 	}
-  });
+});
 
 //! Working... currently returns correct JSON data. needs UI work
 // GET route to retrieve a unit's info and populate tenant's firstName, lastName, phone and email
