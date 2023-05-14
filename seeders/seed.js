@@ -4,6 +4,8 @@ const connection = require("../server");
 // models to structure data
 const User = require("../models/User");
 const Unit = require("../models/Unit");
+const Parking = require("../models/Parking");
+const Ticket = require("../models/Ticket");
 
 // seed data to populate collections
 const usersSeeds = require("./users.json");
@@ -16,6 +18,10 @@ connection.then(async () => {
 		console.log("=========== USER COLLECTION DELETED ============");
 		await Unit.deleteMany({});
 		console.log("=========== UNIT COLLECTION DELETED ============");
+		await Parking.deleteMany({});
+		console.log("=========== PARKING COLLECTION DELETED ============");
+		await Ticket.deleteMany({});
+		console.log("=========== TICKET COLLECTION DELETED ============");
 
 		// Creating the collections
 		await User.create(usersSeeds);
