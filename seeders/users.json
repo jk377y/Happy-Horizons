@@ -1,4 +1,12 @@
 [
+    {
+		"firstName": "AdminFN",
+		"lastName": "AdminLN",
+		"email": "admin@email.com",
+		"phone": "000-000-0000",
+		"password": "admin",
+		"isAdmin": true
+	},
 	{
 		"firstName": "John",
 		"lastName": "Doe",
@@ -61,13 +69,5 @@
 		"email": "daniel.anderson@email.com",
 		"phone": "999-999-9999",
 		"password": "daniel.anderson"
-	},
-	{
-		"firstName": "AdminFN",
-		"lastName": "AdminLN",
-		"email": "admin@email.com",
-		"phone": "000-000-0000",
-		"password": "admin",
-		"isAdmin": true
 	}
 ]

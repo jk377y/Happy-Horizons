@@ -38,17 +38,19 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 const dbName = "happy_horizons_db";
-mongoose
-	.connect(process.env.MONGODB_URI || `mongodb://127.0.0.1:27017/${dbName}`, {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-	})
-	.then(() => {
-		console.log("Connected to MongoDB successfully!");
-		app.listen(PORT, () => {
-			console.log(`Server started on port ${PORT}`);
-		});
-	})
-	.catch((err) => {
-		console.log(err);
-	});
+const connection = mongoose
+  .connect(process.env.MONGODB_URI || `mongodb://127.0.0.1:27017/${dbName}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Connected to MongoDB successfully!");
+    app.listen(PORT, () => {
+      console.log(`Server started on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+module.exports = connection;
