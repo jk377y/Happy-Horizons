@@ -14,6 +14,23 @@ router.get("/", checkLoggedIn, adminAuth, function (req, res) {
 	});
 });
 
+//! Working
+// GET route to retrieve ALL units
+router.get("/units", checkLoggedIn, adminAuth, async (req, res) => {
+	try {
+	  const units = await Unit.find();
+  
+	  if (!units || units.length === 0) {
+		return res.status(404).json({ message: "No units found" });
+	  }
+  
+	  res.json(units);
+	} catch (error) {
+	  console.error(error);
+	  res.status(500).json({ message: "Internal server error" });
+	}
+  });
+
 //! Working... currently returns correct JSON data. needs UI work
 // GET route to retrieve a unit's info and populate tenant's firstName, lastName, phone and email
 router.get("/units/:id", checkLoggedIn, adminAuth, async (req, res) => {
