@@ -9,6 +9,7 @@ const { adminAuth } = require("../../middleware/adminAuth");
 // GET route to load admin panel
 router.get("/", checkLoggedIn, adminAuth, function (req, res) {
 	res.render("admin", {
+		title: "Admin Panel",
 		layout: "adminPanel.handlebars",
 		stylesheet: "admin.css",
 	});
@@ -18,11 +19,17 @@ router.get("/", checkLoggedIn, adminAuth, function (req, res) {
 // GET route to retreive ALL users
 router.get("/users", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
-		const users = await User.find();
+		const users = await User.find({});
 		if (!users || users.length === 0) {
 			return res.status(404).json({ message: "No users found" });
 		}
-		res.json(users);
+		const userArray = users.map((user) => user.toObject());
+		res.render("adminUsers", {
+			users: userArray,
+			title: "Users",
+			layout: "adminPanel.handlebars",
+			stylesheet: "adminPanel.css",
+		});
 	} catch (error) {
 		console.error(error);
 		res.status(500).json({ message: "Internal server error" });
@@ -70,6 +77,7 @@ router.get("/units/:id", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
 		const unitID = req.params.id;
 		const unit = await Unit.findById(unitID).populate({
+			title: "Unit",
 			path: "tenant",
 			select: "firstName lastName phone email",
 		});

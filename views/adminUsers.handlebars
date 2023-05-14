@@ -1,0 +1,20 @@
+<table width="900">
+    <tr> 
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Unit</th>
+        <th>isAdmin</th>
+    </tr>
+    {{#each users}}
+    <tr>
+        <td class="tableData">{{this.firstName}}</td>
+        <td class="tableData">{{this.lastName}}</td>
+        <td class="tableData">{{this.email}}</td>
+        <td class="tableData">{{this.phone}}</td>
+        <td class="tableData">{{this.unit}}</td>
+        <td class="tableData">{{this.isAdmin}}</td>
+    </tr>
+    {{/each}}
+</table>
