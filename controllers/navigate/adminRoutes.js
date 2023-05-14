@@ -31,11 +31,11 @@ router.get("/users", checkLoggedIn, adminAuth, async (req, res) => {
 
 //? Need more testing for making sure when user goes into unit collection that the unit also goes into the user collection
 //! Working
-// GET route to retrieve a single user's info by searching for their uuid
-router.get("/users/:uuid", checkLoggedIn, adminAuth, async (req, res) => {
+// GET route to retrieve a single user's info by searching for their ID
+router.get("/users/:id", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
-		const userUUID = req.params.uuid;
-		const user = await User.findOne({ uuid: userUUID }).populate({
+		const userID = req.params.id;
+		const user = await User.findById(userID).populate({
 			path: "unit",
 			select: "apartmentNumber floorPlan floorPlanImage bedrooms bathrooms monthlyRent",
 		});
@@ -68,8 +68,8 @@ router.get("/units", checkLoggedIn, adminAuth, async (req, res) => {
 // GET route to retrieve a unit's info and populate tenant's firstName, lastName, phone and email
 router.get("/units/:id", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
-		const unitId = req.params.id;
-		const unit = await Unit.findById(unitId).populate({
+		const unitID = req.params.id;
+		const unit = await Unit.findById(unitID).populate({
 			path: "tenant",
 			select: "firstName lastName phone email",
 		});
