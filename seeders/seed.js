@@ -1,23 +1,30 @@
-const connection = require('../server');
-const User = require('../models/User');
-const Unit = require('../models/Unit');
-const usersSeeds = require('./users.json');
-const unitSeeds = require('./units.json');
+// database connection
+const connection = require("../server");
+
+// models to structure data
+const User = require("../models/User");
+const Unit = require("../models/Unit");
+
+// seed data to populate collections
+const usersSeeds = require("./users.json");
+const unitSeeds = require("./units.json");
 
 connection.then(async () => {
 	try {
-	  // Deleting any existing collections
-	  await User.deleteMany({});
-	  await Unit.deleteMany({});
-	  // Creating the collections
-	  await User.create(usersSeeds);
-	  await Unit.create(unitSeeds);
-	} catch (err) {
-	  console.error(err);
-	  process.exit(1);
-	}
+		// Deleting any existing collections
+		await User.deleteMany({});
+		console.log("=========== USER COLLECTION DELETED ============");
+		await Unit.deleteMany({});
+		console.log("=========== UNIT COLLECTION DELETED ============");
 
-	console.log("=========== USER SEEDING WAS SUCCESSFUL!!! ============");
-	console.log("=========== UNIT SEEDING WAS SUCCESSFUL!!! ============");
+		// Creating the collections
+		await User.create(usersSeeds);
+		console.log("=========== USER SEEDING WAS SUCCESSFUL!!! ============");
+		await Unit.create(unitSeeds);
+		console.log("=========== UNIT SEEDING WAS SUCCESSFUL!!! ============");
+	} catch (err) {
+		console.error(err);
+		process.exit(1);
+	}
 	process.exit(0);
 });
