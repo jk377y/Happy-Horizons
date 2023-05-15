@@ -28,12 +28,16 @@ body {
 	--border: 3px solid var(--bgColor);
 	--bgColor: rgba(0, 0, 0, 0.562);
 	--windowColor: #00000085;
+    --colorGO: #00ff00;
 	--hover: #ffff00;
 	--error: #ff0000;
 }
 main {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .adminUserWrap {
     width: 100%;
@@ -49,12 +53,19 @@ main {
     color: var(--hover);
 }
 .error {
-    font-size: var(--h1);
-    color: var(--error);
+    color: var(--error) !important;
 }
 .warning {
     font-size: var(--h3);
     color: var(--hover);
+}
+.border {
+	border: 1px solid var(--borderColor);
+	box-shadow: 1px 1px 3px 1px;
+}
+.emptySpace {
+    height: 50px;
+    width: 100%;
 }
 .navButton {
     background-color: var(--color3);
@@ -74,8 +85,9 @@ main {
     justify-content: space-between;
     padding: 10px;
 }
-.title {
+.titleDiv, .title h2, .adminTitle h2 {
     color: var(--color1);
+    text-align: center;
 }
 .navLink {
     font-size: var(--h4);
@@ -102,29 +114,53 @@ main {
     flex-direction: row;
     gap: 10px;
 }
+.addNewUser, .deleteUser, .usersList {
+    background-color: var(--windowColor);
+    padding: 10px;
+    border-radius: 10px;
+}
 table {
     margin-left: 10px;
-    background: var(--windowColor);
-    padding: 10px;
 }
 th {
-    background-color: var(--color2);
+    background-color: var(--color3);
     text-decoration: underline;
     font-size: 16px;
     color: white;
     padding: 5px;
+    margin: 5px;
 }
 .tableData {
     color: white;
     background-color: rgb(75, 75, 75);
     font-size: 14px;
-    margin: 3px;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid rgb(151, 151, 151);
+}
+.updateTableDataBtn, .newUserBtn {
+    color: var(--colorGO);
+    background-color: var(--color2);
+    font-size: 14px;
+    margin: 5px;
     padding: 2px;
 }
-.updateTableDataBtn {
-    color: rgb(18, 212, 0);
-    background-color: rgb(75, 75, 75);
+.updateTableDataBtn:hover, .newUserBtn:hover {
+    color: var(--color2);
+    font-weight: bold;
+    background-color: var(--colorGO);
+    cursor: pointer;
+}
+.deleteUserBtn {
+    color: var(--error);
+    background-color: var(--color2);
     font-size: 14px;
-    margin: 3px;
+    margin: 5px;
     padding: 2px;
+}
+.deleteUserBtn:hover {
+    color: var(--color2);
+    font-weight: bold;
+    background-color: var(--error);
+    cursor: pointer;
 }

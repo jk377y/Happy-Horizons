@@ -1,26 +1,53 @@
-<table>
-  <tr>
-    <th>User ID</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Email</th>
-    <th>Phone</th>
-    <th>Apt ID</th>
-    <th>Apt #</th>
-    <th>isAdmin</th>
-    <th>Actions</th>
-  </tr>
-  {{#each users}}
-  <tr>
-    <td><input type="text" value="{{this._id}}" class="tableData" style="width: 200px"></td>
-    <td><input type="text" value="{{this.firstName}}" class="tableData" style="width: 150px"></td>
-    <td><input type="text" value="{{this.lastName}}" class="tableData" style="width: 150px"></td>
-    <td><input type="text" value="{{this.email}}" class="tableData" style="width: 250px"></tds=>
-    <td><input type="text" value="{{this.phone}}" class="tableData" style="width: 100px"></td>
-    <td><input type="text" value="{{this.unit._id}}" class="tableData" style="width: 200px"></td>
-    <td><input type="text" value="{{this.unit.apartmentNumber}}" class="tableData" style="width: 75px"></td>
-    <td><input type="text" value="{{this.isAdmin}}" class="tableData" style="width: 75px"></td>
-    <td><input type="button" data-user-id="{{this._id}}" class="updateTableDataBtn" style="width: 75px" value="Update"/></td>
-  </tr>
-  {{/each}}
-</table>
+<div class="emptySpace"></div>
+<div class="addNewUser adminTitle border">
+    <h2>Add a new user</h2>
+    <form>
+        <input type="text" placeholder="First Name" required class="tableData" style="width: 150px">
+        <input type="text" placeholder="Last Name" required class="tableData" style="width: 150px">
+        <input type="text" placeholder="Email" required class="tableData" style="width: 250px">
+        <input type="text" placeholder="Password" required class="tableData" style="width: 100px">
+        <input type="text" placeholder="Phone" required class="tableData" style="width: 100px">
+        <input type="text" placeholder="Unit ID" class="tableData" style="width: 200px">
+        <input type="text" placeholder="Apt #" class="tableData" style="width: 75px">
+        <input type="text" placeholder="isAdmin" required class="tableData" value="false" style="width: 75px">
+        <input type="button" class="newUserBtn" style="width: 100px" value="Create User"/>
+    </form>
+</div>
+<br>
+<div class="deleteUser adminTitle border">
+    <h2>Delete a user</h2>
+    <form>
+        <input type="text" placeholder="User ID" class="tableData" style="width: 200px">
+        <input type="button" class="deleteUserBtn" style="width: 100px" value="Delete User"/>
+    </form>
+</div>
+<br>
+<div class="usersList adminTitle border">
+    <h2>Users</h2>
+    <table>
+      <tr>
+        <th>User ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Unit ID</th>
+        <th>Apt #</th>
+        <th>isAdmin</th>
+        <th>Actions</th>
+      </tr>
+      {{#each users}}
+      <tr>
+        <td><input type="text" value="{{this._id}}" class="tableData" style="width: 200px"></td>
+        <td><input type="text" value="{{this.firstName}}" class="tableData" style="width: 150px"></td>
+        <td><input type="text" value="{{this.lastName}}" class="tableData" style="width: 150px"></td>
+        <td><input type="text" value="{{this.email}}" class="tableData" style="width: 250px"></tds=>
+        <td><input type="text" value="{{this.phone}}" class="tableData" style="width: 100px"></td>
+        <td><input type="text" value="{{this.unit._id}}" class="tableData" style="width: 200px"></td>
+        <td><input type="text" value="{{this.unit.apartmentNumber}}" class="tableData" style="width: 75px"></td>
+        <td><input type="text" value="{{this.isAdmin}}" class="tableData" style="width: 75px"></td>
+        <td><input type="button" data-user-id="{{this._id}}" class="updateTableDataBtn" style="width: 75px" value="Update"/></td>
+      </tr>
+      {{/each}}
+    </table>
+</div>
