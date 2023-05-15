@@ -16,10 +16,10 @@ router.get("/", checkLoggedIn, adminAuth, function (req, res) {
 });
 
 //! Working
-// GET route to retreive ALL users
+// GET route to retreive ALL users, sorts by lastName ascending
 router.get("/users", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
-		const users = await User.find({}).populate("unit");
+		const users = await User.find({}).sort({ lastName: 1 }).populate("unit");
 		if (!users || users.length === 0) {
 			return res.status(404).json({ message: "No users found" });
 		}

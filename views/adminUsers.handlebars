@@ -26,27 +26,25 @@
     <h2>Users</h2>
     <table>
       <tr>
-        <th>User ID</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Unit ID</th>
-        <th>Apt #</th>
-        <th>isAdmin</th>
-        <th>Actions</th>
+        <th style="width: 200px">User ID</th>
+        <th style="width: 150px">First Name</th>
+        <th style="width: 150px">Last Name</th>
+        <th style="width: 250px">Email</th>
+        <th style="width: 125px">Phone</th>
+        <th style="width: 200px">Unit ID</th>
+        <th style="width: 75px">Apt #</th>
+        <th style="width: 75px">isAdmin</th>
       </tr>
       {{#each users}}
       <tr>
-        <td><input type="text" readonly value="{{this._id}}" class="tableData" style="width: 200px"></td>
-        <td><input type="text" value="{{this.firstName}}" class="tableData" style="width: 150px"></td>
-        <td><input type="text" value="{{this.lastName}}" class="tableData" style="width: 150px"></td>
-        <td><input type="text" value="{{this.email}}" class="tableData" style="width: 250px"></tds=>
-        <td><input type="text" value="{{this.phone}}" class="tableData" style="width: 100px"></td>
-        <td><input type="text" value="{{this.unit._id}}" class="tableData" style="width: 200px"></td>
-        <td><input type="text" value="{{this.unit.apartmentNumber}}" class="tableData" style="width: 75px"></td>
-        <td><input type="text" value="{{this.isAdmin}}" class="tableData" style="width: 75px"></td>
-        <td><input type="button" data-user-id="{{this._id}}" class="updateTableDataBtn" style="width: 75px" value="Update"/></td>
+        <td class="tableData"><a href="/navigate/admin/users/{{this._id}}" target="_blank">{{this._id}}</a></td>
+        <td><input type="text" readonly value="{{this.firstName}}" class="tableData"></td>
+        <td><input type="text" readonly value="{{this.lastName}}" class="tableData"></td>
+        <td><input type="text" readonly value="{{this.email}}" class="tableData"></tds=>
+        <td><input type="text" readonly value="{{this.phone}}" class="tableData"></td>
+        <td class="tableData"><a href="/navigate/admin/units/{{this.unit._id}}" target="_blank">{{this.unit._id}}</a></td>
+        <td><input type="text" readonly value="{{this.unit.apartmentNumber}}" class="tableData"></td>
+        <td><input type="text" readonly value="{{this.isAdmin}}" class="tableData" style="color: {{#if this.isAdmin}}var(--colorGO){{else}}var(--error){{/if}};"></td>
       </tr>
       {{/each}}
     </table>

@@ -102,6 +102,7 @@ main {
     padding: 5px 10px;
     font-size: 18px;
     width: 100px;
+    text-align: center;
     border-radius: 10px;
     color: var(--color7);
     background-color: var(--color2);
@@ -150,16 +151,26 @@ th {
     text-decoration: underline;
     font-size: 16px;
     color: white;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px 0px;
 }
 .tableData {
     color: white;
     background-color: rgb(75, 75, 75);
     font-size: 14px;
-    margin: 5px;
-    padding: 3px;
+    padding: 8px;
     border: 1px solid rgb(151, 151, 151);
+}
+td.tableData {
+    padding: 5px 0;
+    text-align: center;
+}
+td.tableData a {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+input.tableData {
+    width: 100%;
 }
 .updateTableDataBtn, .newUserBtn {
     color: var(--colorGO);
