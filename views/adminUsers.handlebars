@@ -1,20 +1,26 @@
-<table width="900">
-    <tr> 
-        <th>firstName</th>
-        <th>lastName</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Unit</th>
-        <th>isAdmin</th>
-    </tr>
-    {{#each users}}
-    <tr>
-        <td class="tableData">{{this.firstName}}</td>
-        <td class="tableData">{{this.lastName}}</td>
-        <td class="tableData">{{this.email}}</td>
-        <td class="tableData">{{this.phone}}</td>
-        <td class="tableData">{{this.unit}}</td>
-        <td class="tableData">{{this.isAdmin}}</td>
-    </tr>
-    {{/each}}
+<table>
+  <tr>
+    <th>User ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Apt ID</th>
+    <th>Apt #</th>
+    <th>isAdmin</th>
+    <th>Actions</th>
+  </tr>
+  {{#each users}}
+  <tr>
+    <td><input type="text" value="{{this._id}}" class="tableData" style="width: 200px"></td>
+    <td><input type="text" value="{{this.firstName}}" class="tableData" style="width: 150px"></td>
+    <td><input type="text" value="{{this.lastName}}" class="tableData" style="width: 150px"></td>
+    <td><input type="text" value="{{this.email}}" class="tableData" style="width: 250px"></tds=>
+    <td><input type="text" value="{{this.phone}}" class="tableData" style="width: 100px"></td>
+    <td><input type="text" value="{{this.unit._id}}" class="tableData" style="width: 200px"></td>
+    <td><input type="text" value="{{this.unit.apartmentNumber}}" class="tableData" style="width: 75px"></td>
+    <td><input type="text" value="{{this.isAdmin}}" class="tableData" style="width: 75px"></td>
+    <td><input type="button" data-user-id="{{this._id}}" class="updateTableDataBtn" style="width: 75px" value="Update"/></td>
+  </tr>
+  {{/each}}
 </table>

@@ -19,7 +19,7 @@ router.get("/", checkLoggedIn, adminAuth, function (req, res) {
 // GET route to retreive ALL users
 router.get("/users", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
-		const users = await User.find({});
+		const users = await User.find({}).populate("unit");
 		if (!users || users.length === 0) {
 			return res.status(404).json({ message: "No users found" });
 		}

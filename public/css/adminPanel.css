@@ -102,17 +102,29 @@ main {
     flex-direction: row;
     gap: 10px;
 }
-
 table {
-    margin-left: 5px;
+    margin-left: 10px;
+    background: var(--windowColor);
+    padding: 10px;
 }
 th {
-    background-color: var(--color3);
-    color: var(--color2);
-    padding: 2px;
-    border: var(--border);
+    background-color: var(--color2);
+    text-decoration: underline;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
 }
 .tableData {
     color: white;
-    background-color: var(--color4);
+    background-color: rgb(75, 75, 75);
+    font-size: 14px;
+    margin: 3px;
+    padding: 2px;
+}
+.updateTableDataBtn {
+    color: rgb(18, 212, 0);
+    background-color: rgb(75, 75, 75);
+    font-size: 14px;
+    margin: 3px;
+    padding: 2px;
 }
