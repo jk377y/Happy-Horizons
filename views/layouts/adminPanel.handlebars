@@ -13,7 +13,8 @@
 		<header>
 			<div class="header-container">
 				<div class="titleDiv">
-					<h2 class="title">Happy Horizons Admin Panel</h2>
+					<h2 class="title">Happy Horizons</h2>
+					<h2 class="title">Admin Panel</h2>
 				</div>
 				<nav class="navBar">
 					<a class="navLink adminText" href="/">Home</a>
@@ -41,6 +42,12 @@
 		{{/if}}
 
 		<main>
+			<div class="adminNavs">
+				<input type="button" id="usersBtn" class="adminNavBtns" value="Users" />
+				<input type="button" id="unitsBtn" class="adminNavBtns" value="Units" />
+				<input type="button" id="ticketsBtn" class="adminNavBtns" value="Tickets" />
+				<input type="button" id="parkingBtn" class="adminNavBtns" value="Parking" />
+			</div>
 			{{{body}}}
 		</main>
 

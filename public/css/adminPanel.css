@@ -18,6 +18,7 @@ body {
 	--color4: #333333c9;
 	--color5: #00000033;
     --color6: #31475f;
+    --color7: #ff9900;
 	--h1: 2.5rem;
 	--h2: 2rem;
 	--h3: 1.5rem;
@@ -85,9 +86,31 @@ main {
     justify-content: space-between;
     padding: 10px;
 }
-.titleDiv, .title h2, .adminTitle h2 {
+.titleDiv {
+    color: var(--color1);
+}
+.title h2, .adminTitle h2 {
     color: var(--color1);
     text-align: center;
+}
+.adminNavs {
+    display: flex;
+    flex-direction: row;
+}
+.adminNavBtns {
+    margin: 0 20px;
+    padding: 5px 10px;
+    font-size: 18px;
+    width: 100px;
+    border-radius: 10px;
+    color: var(--color7);
+    background-color: var(--color2);
+}
+.adminNavBtns:hover {
+    color: var(--color2);
+    background-color: var(--color7);
+    cursor: pointer;
+    font-weight: bold;
 }
 .navLink {
     font-size: var(--h4);
@@ -144,6 +167,7 @@ th {
     font-size: 14px;
     margin: 5px;
     padding: 2px;
+    border-radius: 10px;
 }
 .updateTableDataBtn:hover, .newUserBtn:hover {
     color: var(--color2);
@@ -157,6 +181,7 @@ th {
     font-size: 14px;
     margin: 5px;
     padding: 2px;
+    border-radius: 10px;
 }
 .deleteUserBtn:hover {
     color: var(--color2);
