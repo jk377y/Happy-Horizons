@@ -39,10 +39,19 @@
         <tr>
             <td><input type="text" value="{{user.unit._id}}" class="tableData"></td>
             <td><input type="text" value="{{user.unit.apartmentNumber}}" class="tableData"></td>
-            <td><input type="text" value="{{user.unit.floorPlan}}" class="tableData"></td>
+            <td class="tableData" onclick="openModal('{{user.unit.floorPlanImage}}')"><a href="javascript:void(0)">{{user.unit.floorPlan}}</a></td>
             <td><input type="text" value="{{user.unit.bedrooms}}" class="tableData"></td>
             <td><input type="text" value="{{user.unit.bathrooms}}" class="tableData"></td>
             <td><input type="text" value="${{user.unit.monthlyRent}}" class="tableData"></td>
         </tr>
     </table>
 </div>
+<!-- Floor Plan Modal -->
+<div id="floorPlanModal" class="modal border">
+    <div class="modalImgContainer">
+        <span id="close" class="close">X</span>
+        <img class="modal-image" src="/images/floorplans/{{user.unit.floorpPlanImage}}" alt='{{user.unit.floorPlan}}'>
+    </div>
+</div>
+
+<script src="../../../js/floorPlanModal.js"></script>
