@@ -1,0 +1,48 @@
+<div class="emptySpace"></div>
+<div class="usersList adminTitle border">
+    <h2>{{user.firstName}} {{user.lastName}}</h2>
+    <br>
+    <table>
+        <tr>
+            <th style="width: 200px">User ID</th>
+            <th style="width: 150px">First Name</th>
+            <th style="width: 150px">Last Name</th>
+            <th style="width: 250px">Email</th>
+            <th style="width: 125px">Phone</th>
+            <th style="width: 100px">Password</th>
+            <th style="width: 75px">isAdmin</th>
+        </tr>
+        <tr>
+            <td><input type="text" value="{{user._id}}" class="tableData"></td>
+            <td><input type="text" value="{{user.firstName}}" class="tableData"></td>
+            <td><input type="text" value="{{user.lastName}}" class="tableData"></td>
+            <td><input type="text" value="{{user.email}}" class="tableData"></td>
+            <td><input type="text" value="{{user.phone}}" class="tableData"></td>
+            <td><input type="text" value="{{user.password}}" class="tableData"></td>
+            <td><input type="text" readonly value="{{user.isAdmin}}" class="tableData" style="color: {{#if user.isAdmin}}var(--colorGO){{else}}var(--error){{/if}};"></td>
+        </tr>
+    </table>
+</div>
+<div class="emptySpace"></div>
+<div class="usersList adminTitle border">
+    <h2>{{user.unit.apartmentNumber}} Unit Info</h2>
+    <br>
+    <table>
+        <tr>
+            <th style="width: 300px">Unit ID</th>
+            <th style="width: 75px">Apt #</th>
+            <th style="width: 100px">Floor Plan</th>
+            <th style="width: 100px">Bedrooms</th>
+            <th style="width: 100px">Bathrooms</th>
+            <th style="width: 125px">Monthly Rent</th>
+        </tr>
+        <tr>
+            <td><input type="text" value="{{user.unit._id}}" class="tableData"></td>
+            <td><input type="text" value="{{user.unit.apartmentNumber}}" class="tableData"></td>
+            <td><input type="text" value="{{user.unit.floorPlan}}" class="tableData"></td>
+            <td><input type="text" value="{{user.unit.bedrooms}}" class="tableData"></td>
+            <td><input type="text" value="{{user.unit.bathrooms}}" class="tableData"></td>
+            <td><input type="text" value="${{user.unit.monthlyRent}}" class="tableData"></td>
+        </tr>
+    </table>
+</div>

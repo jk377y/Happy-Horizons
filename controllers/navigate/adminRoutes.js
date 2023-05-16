@@ -49,7 +49,12 @@ router.get("/users/:id", checkLoggedIn, adminAuth, async (req, res) => {
 		if (!user) {
 			return res.status(404).json({ message: "User not found" });
 		}
-		res.json(user);
+		res.render("adminUser", {
+			user: user.toObject(),
+			title: "User",
+			layout: "adminPanel.handlebars",
+			stylesheet: "adminPanel.css",
+		});
 	} catch (error) {
 		console.error(error);
 		res.status(500).json({ message: "Internal server error" });
