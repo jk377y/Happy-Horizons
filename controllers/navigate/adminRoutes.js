@@ -11,7 +11,7 @@ router.get("/", checkLoggedIn, adminAuth, function (req, res) {
 	res.render("admin", {
 		title: "Admin Panel",
 		layout: "adminPanel.handlebars",
-		stylesheet: "admin.css",
+		stylesheet: "adminPanel.css",
 	});
 });
 
