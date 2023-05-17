@@ -82,6 +82,9 @@ router.delete("/users/:id", checkLoggedIn, adminAuth, async (req, res) => {
 		if (!user) {
 			return res.status(404).json({ message: "User not found" });
 		}
+		if (user.unit) {
+			await Unit.findByIdAndUpdate(user.unit, { tenant: null });
+		}
 		res.json({ message: "User deleted successfully" });
 	} catch (error) {
 		console.error(error);
