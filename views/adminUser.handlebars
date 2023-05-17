@@ -84,6 +84,17 @@
     {{/each}}
     </table>
 </div>
+<div class="emptySpace"></div>
+<div class="emptySpace"></div>
+<div class="emptySpace"></div>
+<br>
+<div class="deleteUser adminTitle border">
+    <h2>Delete a user</h2>
+    <form>
+        <input type="text" placeholder="User ID" id="deleteUserID" class="tableData" style="width: 200px">
+        <input type="button" class="deleteUserBtn" style="width: 100px" value="Delete User" onclick="deleteUser()">
+    </form>
+</div>
 
 <!-- Floor Plan Modal ** Hidden by default ** -->
 <div id="floorPlanModal" class="modal border">
@@ -94,3 +105,4 @@
 </div>
 
 <script src="../../../js/floorPlanModal.js"></script>
+<script src="../../../js/deleteUser.js"></script>

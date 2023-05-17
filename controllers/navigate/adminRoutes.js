@@ -42,11 +42,10 @@ router.get("/users", checkLoggedIn, adminAuth, async (req, res) => {
 router.get("/users/:id", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
 		const userID = req.params.id;
-		const user = await User.findById(userID)
-			.populate({
-				path: "unit",
-				select: "apartmentNumber floorPlan floorPlanImage bedrooms bathrooms monthlyRent",
-			})
+		const user = await User.findById(userID).populate({
+			path: "unit",
+			select: "apartmentNumber floorPlan floorPlanImage bedrooms bathrooms monthlyRent",
+		});
 		if (!user) {
 			return res.status(404).json({ message: "User not found" });
 		}
@@ -56,6 +55,34 @@ router.get("/users/:id", checkLoggedIn, adminAuth, async (req, res) => {
 			layout: "adminPanel.handlebars",
 			stylesheet: "adminPanel.css",
 		});
+	} catch (error) {
+		console.error(error);
+		res.status(500).json({ message: "Internal server error" });
+	}
+});
+
+// POST route to create a new user
+router.post("/users", checkLoggedIn, adminAuth, async (req, res) => {
+	try {
+		const { firstName, lastName, dob, email, password, phone, isAdmin } = req.body;
+		const user = new User({ firstName, lastName, dob, email, password, phone, isAdmin });
+		await user.save();
+		res.status(201).json({ message: "User created successfully" });
+	} catch (error) {
+		console.error(error);
+		res.status(500).json({ message: "Internal server error" });
+	}
+});
+
+// DELETE route to delete a user
+router.delete("/users/:id", checkLoggedIn, adminAuth, async (req, res) => {
+	try {
+		const userID = req.params.id;
+		const user = await User.findByIdAndDelete(userID);
+		if (!user) {
+			return res.status(404).json({ message: "User not found" });
+		}
+		res.json({ message: "User deleted successfully" });
 	} catch (error) {
 		console.error(error);
 		res.status(500).json({ message: "Internal server error" });
