@@ -12,6 +12,13 @@ const userSchema = new Schema({
 		required: true,
 		trim: true,
 	},
+	dob: {
+		type: Date,
+		required: true,
+	},
+	age: {
+		type: Number,
+	},
 	email: {
 		type: String,
 		required: true,
@@ -34,6 +41,30 @@ const userSchema = new Schema({
 		default: null,
 		required: false,
 	},
+	otherOccupants: [{
+		firstName: {
+			type: String,
+			required: false,
+			trim: true,
+		},
+		lastName: {
+			type: String,
+			required: false,
+			trim: true,
+		},
+		dob: {
+			type: Date,
+			required: true,
+		},
+		age: {
+			type: Number,
+		},
+		relationship: {
+			type: String,
+			required: false,
+			trim: true,
+		},
+	}],
 	isUser: {
 		type: Boolean,
 		default: true,
@@ -45,6 +76,40 @@ const userSchema = new Schema({
 		required: false,
 	},
 });
+
+// virtual to calculate age
+userSchema.virtual('calculateAge').get(function () {
+	const currentDate = new Date();
+	const birthDate = new Date(this.dob);
+	const age = currentDate.getFullYear() - birthDate.getFullYear();
+	const monthDiff = currentDate.getMonth() - birthDate.getMonth();
+	if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < birthDate.getDate())) {
+		return age - 1;
+	}
+	return age;
+});
+
+// pre-save middleware to calculate age for user
+userSchema.pre('save', function (next) {
+	this.age = this.calculateAge;
+	next();
+});
+
+// pre-save middleware to calculate age for other occupants
+userSchema.pre('save', function (next) {
+	this.otherOccupants.forEach((occupant) => {
+	  const currentDate = new Date();
+	  const birthDate = new Date(occupant.dob);
+	  const age = currentDate.getFullYear() - birthDate.getFullYear();
+	  const monthDiff = currentDate.getMonth() - birthDate.getMonth();
+	  if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < birthDate.getDate())) {
+		occupant.age = age - 1;
+	  } else {
+		occupant.age = age;
+	  }
+	});
+	next();
+  });
 
 // hash user password
 userSchema.pre("save", async function (next) {

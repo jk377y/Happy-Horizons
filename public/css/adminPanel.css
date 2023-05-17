@@ -142,6 +142,10 @@ main {
     background-color: var(--windowColor);
     padding: 10px;
     border-radius: 10px;
+    /* width: 1400px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 table {
     margin-left: 10px;
@@ -168,6 +172,11 @@ td.tableData a {
     color: white;
     font-size: 14px;
     text-align: center;
+}
+.sideBySideTables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 input.tableData {
     width: 100%;

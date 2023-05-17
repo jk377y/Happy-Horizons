@@ -42,10 +42,11 @@ router.get("/users", checkLoggedIn, adminAuth, async (req, res) => {
 router.get("/users/:id", checkLoggedIn, adminAuth, async (req, res) => {
 	try {
 		const userID = req.params.id;
-		const user = await User.findById(userID).populate({
-			path: "unit",
-			select: "apartmentNumber floorPlan floorPlanImage bedrooms bathrooms monthlyRent",
-		});
+		const user = await User.findById(userID)
+			.populate({
+				path: "unit",
+				select: "apartmentNumber floorPlan floorPlanImage bedrooms bathrooms monthlyRent",
+			})
 		if (!user) {
 			return res.status(404).json({ message: "User not found" });
 		}

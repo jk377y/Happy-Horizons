@@ -2,6 +2,7 @@
     {
 		"firstName": "AdminFN",
 		"lastName": "AdminLN",
+		"dob": "01/01/1990",
 		"email": "admin@email.com",
 		"phone": "000-000-0000",
 		"password": "admin",
@@ -10,41 +11,147 @@
 	{
 		"firstName": "John",
 		"lastName": "Doe",
+		"dob": "01/01/1990",
 		"email": "john.doe@email.com",
 		"phone": "111-111-1111",
+		"otherOccupants": [
+			{
+				"firstName": "John",
+				"lastName": "Davis",
+				"dob": "04/04/1987",
+				"relationship": "spouse"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Davis",
+				"dob": "01/01/2013",
+				"relationship": "daughter"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Davis",
+				"dob": "01/01/2015",
+				"relationship": "son"
+			}
+		],
 		"password": "john.doe"
 	},
 	{
 		"firstName": "Jane",
 		"lastName": "Smith",
+		"dob": "01/01/1990",
 		"email": "jane.smith@email.com",
 		"phone": "222-222-2222",
+		"otherOccupants": [
+			{
+				"firstName": "John",
+				"lastName": "Davis",
+				"dob": "04/04/1987",
+				"relationship": "spouse"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Davis",
+				"dob": "01/01/2013",
+				"relationship": "daughter"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Davis",
+				"dob": "01/01/2015",
+				"relationship": "son"
+			}
+		],
 		"password": "jane.smith"
 	},
 	{
 		"firstName": "Michael",
 		"lastName": "Johnson",
+		"dob": "01/01/1990",
 		"email": "michael.johnson@email.com",
 		"phone": "333-333-3333",
+		"otherOccupants": [
+			{
+				"firstName": "John",
+				"lastName": "Davis",
+				"dob": "04/04/1987",
+				"relationship": "spouse"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Davis",
+				"dob": "01/01/2013",
+				"relationship": "daughter"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Davis",
+				"dob": "01/01/2015",
+				"relationship": "son"
+			}
+		],
 		"password": "michael.johnson"
 	},
 	{
 		"firstName": "Emily",
 		"lastName": "Davis",
+		"dob": "01/01/1990",
 		"email": "emily.davis@email.com",
 		"phone": "444-444-4444",
+		"otherOccupants": [
+			{
+				"firstName": "John",
+				"lastName": "Davis",
+				"dob": "04/04/1987",
+				"relationship": "spouse"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Davis",
+				"dob": "01/01/2013",
+				"relationship": "daughter"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Davis",
+				"dob": "01/01/2015",
+				"relationship": "son"
+			}
+		],
 		"password": "emily.davis"
 	},
 	{
 		"firstName": "Alex",
 		"lastName": "Wilson",
+		"dob": "01/01/1990",
 		"email": "alex.wilson@email.com",
 		"phone": "555-555-5555",
+		"otherOccupants": [
+			{
+				"firstName": "John",
+				"lastName": "Davis",
+				"dob": "04/04/1987",
+				"relationship": "spouse"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Davis",
+				"dob": "01/01/2013",
+				"relationship": "daughter"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Davis",
+				"dob": "01/01/2015",
+				"relationship": "son"
+			}
+		],
 		"password": "alex.wilson"
 	},
 	{
 		"firstName": "Sarah",
 		"lastName": "Lee",
+		"dob": "01/01/1990",
 		"email": "sarah.lee@email.com",
 		"phone": "666-666-6666",
 		"password": "sarah.lee"
@@ -52,6 +159,7 @@
 	{
 		"firstName": "Matthew",
 		"lastName": "Robinson",
+		"dob": "01/01/1990",
 		"email": "matthew.robinson@email.com",
 		"phone": "777-777-7777",
 		"password": "matthew.robinson"
@@ -59,15 +167,57 @@
 	{
 		"firstName": "Sophia",
 		"lastName": "Taylor",
+		"dob": "01/01/1990",
 		"email": "sophia.taylor@email.com",
 		"phone": "888-888-8888",
+		"otherOccupants": [
+			{
+				"firstName": "John",
+				"lastName": "Davis",
+				"dob": "04/04/1987",
+				"relationship": "spouse"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Davis",
+				"dob": "01/01/2013",
+				"relationship": "daughter"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Davis",
+				"dob": "01/01/2015",
+				"relationship": "son"
+			}
+		],
 		"password": "sophia.taylor"
 	},
 	{
 		"firstName": "Daniel",
 		"lastName": "Anderson",
+		"dob": "01/01/1990",
 		"email": "daniel.anderson@email.com",
 		"phone": "999-999-9999",
+		"otherOccupants": [
+			{
+				"firstName": "John",
+				"lastName": "Davis",
+				"dob": "04/04/1987",
+				"relationship": "spouse"
+			},
+			{
+				"firstName": "Jane",
+				"lastName": "Davis",
+				"dob": "01/01/2013",
+				"relationship": "daughter"
+			},
+			{
+				"firstName": "Michael",
+				"lastName": "Davis",
+				"dob": "01/01/2015",
+				"relationship": "son"
+			}
+		],
 		"password": "daniel.anderson"
 	}
 ]

@@ -4,9 +4,11 @@
     <br>
     <table>
         <tr>
-            <th style="width: 200px">User ID</th>
+            <th style="width: 225px">User ID</th>
             <th style="width: 150px">First Name</th>
             <th style="width: 150px">Last Name</th>
+            <th style="width: 100px">D.O.B.</th>
+            <th style="width: 50px">Age</th>
             <th style="width: 250px">Email</th>
             <th style="width: 125px">Phone</th>
             <th style="width: 100px">Password</th>
@@ -16,17 +18,19 @@
             <td><input type="text" value="{{user._id}}" class="tableData"></td>
             <td><input type="text" value="{{user.firstName}}" class="tableData"></td>
             <td><input type="text" value="{{user.lastName}}" class="tableData"></td>
+            <td><input type="text" value="{{formatDate user.dob}}" class="tableData"></td>
+            <td><input type="text" value="{{user.age}}" class="tableData"></td>
             <td><input type="text" value="{{user.email}}" class="tableData"></td>
             <td><input type="text" value="{{user.phone}}" class="tableData"></td>
             <td><input type="text" value="{{user.password}}" class="tableData"></td>
             <td><input type="text" readonly value="{{user.isAdmin}}" class="tableData" style="color: {{#if user.isAdmin}}var(--colorGO){{else}}var(--error){{/if}};"></td>
+            <td><input type="button" class="updateTableDataBtn" style="width: 100px" value="Update User"/></td>
         </tr>
     </table>
 </div>
 <div class="emptySpace"></div>
 <div class="usersList adminTitle border">
-    <h2>{{user.unit.apartmentNumber}} Unit Info</h2>
-    <br>
+    <h2>{{user.unit.apartmentNumber}} Unit Info</h2>    
     <table>
         <tr>
             <th style="width: 300px">Unit ID</th>
@@ -46,11 +50,44 @@
         </tr>
     </table>
 </div>
-<!-- Floor Plan Modal -->
+<div class="emptyspace"></div>
+<div class="usersList adminTitle border">
+    <h2>{{user.unit.apartmentNumber}} Other Occupants Info</h2>
+    <table>
+        <tr>
+            <th style="width: 150px">First Name</th>
+            <th style="width: 150px">Last Name</th>
+            <th style="width: 100px">D.O.B.</th>
+            <th style="width: 50px">Age</th>
+            <th style="width: 125px">Relationship</th>
+        </tr>
+        <tr>
+            <td><input type="text" value="" class="tableData"></td>
+            <td><input type="text" value="" class="tableData"></td>
+            <td><input type="text" value="" class="tableData"></td>
+            <td><input type="text" value="" class="tableData"></td>
+            <td><input type="text" value="" class="tableData"></td>
+            <td><input type="button" class="updateTableDataBtn" style="width: 100px" value="Add New"/></td>
+        </tr>
+    {{#each user.otherOccupants}}
+        <tr>
+            <td><input type="text" value="{{this.firstName}}" class="tableData"></td>
+            <td><input type="text" value="{{this.lastName}}" class="tableData"></td>
+            <td><input type="text" value="{{formatDate this.dob}}" class="tableData"></td>
+            <td><input type="text" value="{{this.age}}" class="tableData"></td>
+            <td><input type="text" value="{{this.relationship}}" class="tableData"></td>
+            <td><input type="button" class="updateTableDataBtn" style="width: 100px" value="Update"/></td>
+            <td><input type="button" class="deleteUserBtn" style="width: 100px" value="Remove"/></td>
+        </tr>
+    {{/each}}
+    </table>
+</div>
+
+<!-- Floor Plan Modal ** Hidden by default ** -->
 <div id="floorPlanModal" class="modal border">
     <div class="modalImgContainer">
         <span id="close" class="close">X</span>
-        <img class="modal-image" src="/images/floorplans/{{user.unit.floorpPlanImage}}" alt='{{user.unit.floorPlan}}'>
+        <img class="modal-image" src="/images/floorplans/{{user.unit.floorpPlanImage}}" alt='{{user.unit.floorPlanImage}}'>
     </div>
 </div>
 
